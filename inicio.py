@@ -20,17 +20,17 @@ class Aplicacion:
         self.canvas1.grid(column=0, row=0)
 
         # fondo
-        fondo = tk.PhotoImage(file="C:\\Users\\user\\Desktop\\proyectoCopiladores\\img\\background.gif")
+        fondo = tk.PhotoImage(file="imagenes\\background.gif")
         self.canvas1.create_image(0, 0, anchor="nw", image=fondo,)
 
         # Animacion
-        pista = tk.PhotoImage(file="animacion/pista.png")
+        pista = tk.PhotoImage(file="imagenes\\animacion\\pista.png")
         self.canvas1.create_image(560, 53, anchor="nw", image=pista)
 
 
         # Casillas estaticas
 
-        self.icon1 = tk.PhotoImage(file="C:\\Users\\user\\Desktop\\proyectoCopiladores\\img\\r1.png")
+        self.icon1 = tk.PhotoImage(file="imagenes\\r1.png")
         self.re = self.canvas1.create_image(70, 70, image=self.icon1, anchor="nw")
         #tanque
         self.r2 = self.canvas1.create_image(70, 150, image=self.icon1, anchor="nw")
@@ -53,66 +53,66 @@ class Aplicacion:
         # Arrastrables
 
         # Tanque
-        archi2 = tk.PhotoImage(file="png\\tanque.png")
+        archi2 = tk.PhotoImage(file="imagenes\\png\\tanque.png")
         b2 = self.canvas1.create_image(680, 530, image=archi2, anchor="nw", tags="movil")
-        archi3 = tk.PhotoImage(file="png\\gasolina.png")
+        archi3 = tk.PhotoImage(file="imagenes\\png\\gasolina.png")
         b3 = self.canvas1.create_image(780, 530, image=archi3, anchor="nw", tags="movil")
-        archi4 = tk.PhotoImage(file="tanque\\cTanque_lleno.png")
+        archi4 = tk.PhotoImage(file="imagenes\\tanque\\cTanque_lleno.png")
         lleno = self.canvas1.create_image(880, 530, image=archi4, anchor="nw", tags="movil")
-        archi5 = tk.PhotoImage(file="tanque\\Ctanque_medio.png")
+        archi5 = tk.PhotoImage(file="imagenes\\tanque\\Ctanque_medio.png")
         medio = self.canvas1.create_image(950, 530, image=archi5, anchor="nw", tags="movil")
-        archi6 = tk.PhotoImage(file="tanque\\Ctanque_cuarto.png")
+        archi6 = tk.PhotoImage(file="imagenes\\tanque\\Ctanque_cuarto.png")
         cuarto = self.canvas1.create_image(1020, 530, image=archi6, anchor="nw", tags="movil")
 
         #Direcciones
-        archi7 = tk.PhotoImage(file="demas\\izquierda.png")
+        archi7 = tk.PhotoImage(file="imagenes\\demas\\izquierda.png")
         izq = self.canvas1.create_image(580, 600, image=archi7, anchor="nw", tags="movil")
-        archi8 = tk.PhotoImage(file="demas\\derecha.png")
+        archi8 = tk.PhotoImage(file="imagenes\\demas\\derecha.png")
         dere=self.canvas1.create_image(680, 600, image=archi8, anchor="nw", tags="movil")
-        archi9 = tk.PhotoImage(file="demas\\rebasar.png")
+        archi9 = tk.PhotoImage(file="imagenes\\demas\\rebasar.png")
         rebasar=self.canvas1.create_image(780, 600, image=archi9, anchor="nw", tags="movil")
-        archi13 = tk.PhotoImage(file="demas\\trafico.png")
+        archi13 = tk.PhotoImage(file="imagenes\\demas\\trafico.png")
         trafico = self.canvas1.create_image(950, 610, image=archi13, anchor="nw", tags="movil")
 
         #condiciones
-        archi10 = tk.PhotoImage(file="demas\\si.png")
+        archi10 = tk.PhotoImage(file="imagenes\\demas\\si.png")
         si = self.canvas1.create_image(1120, 520, image=archi10, anchor="nw", tags="movil")
-        archi11 = tk.PhotoImage(file="demas\\fin.png")
+        archi11 = tk.PhotoImage(file="imagenes\\demas\\fin.png")
         fin = self.canvas1.create_image(880, 590, image=archi11, anchor="nw", tags="movil")
-        archi12 = tk.PhotoImage(file="demas\\inicio.png")
+        archi12 = tk.PhotoImage(file="imagenes\\demas\\inicio.png")
         inicio = self.canvas1.create_image(880, 620, image=archi12, anchor="nw", tags="movil")
 
         #Velocidades
-        self.archi1 = tk.PhotoImage(file="png\\velocidad.png")
+        self.archi1 = tk.PhotoImage(file="imagenes\\png\\velocidad.png")
         velocidad = self.canvas1.create_image(580, 530, image=self.archi1, anchor="nw", tags="movil")
-        archi14 = tk.PhotoImage(file="velocidad\\lento.png")
+        archi14 = tk.PhotoImage(file="imagenes\\velocidad\\lento.png")
         lento = self.canvas1.create_image(1050, 583, image=archi14, anchor="nw", tags="movil")
-        archi15 = tk.PhotoImage(file="velocidad\\normal.png")
+        archi15 = tk.PhotoImage(file="imagenes\\velocidad\\normal.png")
         normal = self.canvas1.create_image(1050, 612, image=archi15, anchor="nw", tags="movil")
-        archi16 = tk.PhotoImage(file="velocidad\\rapido.png")
+        archi16 = tk.PhotoImage(file="imagenes\\velocidad\\rapido.png")
         rapido = self.canvas1.create_image(1050, 640, image=archi16, anchor="nw", tags="movil")
 
         #Signos
-        archi17 = tk.PhotoImage(file="demas\\igual.png")
+        archi17 = tk.PhotoImage(file="imagenes\\demas\\igual.png")
         igual = self.canvas1.create_image(1150, 583, image=archi17, anchor="nw", tags="movil")
         mayor = self.canvas1.create_image(1150, 612, image=archi17, anchor="nw", tags="movil")
-        archi19 = tk.PhotoImage(file="demas\\menor.png")
+        archi19 = tk.PhotoImage(file="imagenes\\demas\\menor.png")
         menor = self.canvas1.create_image(1150, 640, image=archi19, anchor="nw", tags="movil")
 
         #Carro
-        self.car1 = tk.PhotoImage(file="animacion\\red-car.png")
-        self.car11 = tk.PhotoImage(file="animacion\\c2.png")
-        self.car12 = tk.PhotoImage(file="animacion\\c3.png")
-        self.car13 = tk.PhotoImage(file="animacion\\c4.png")
-        self.car2 = tk.PhotoImage(file="animacion\\purple-car.png")
+        self.car1 = tk.PhotoImage(file="imagenes\\animacion\\red-car.png")
+        self.car11 = tk.PhotoImage(file="imagenes\\animacion\\c2.png")
+        self.car12 = tk.PhotoImage(file="imagenes\\animacion\\c3.png")
+        self.car13 = tk.PhotoImage(file="imagenes\\animacion\\c4.png")
+        self.car2 = tk.PhotoImage(file="imagenes\\animacion\\purple-car.png")
         self.carro2 = self.canvas1.create_image(640, 135, image=self.car2, anchor="nw")
-        self.fin = tk.PhotoImage(file="animacion\\fin.png")
-        self.malo = tk.PhotoImage(file="animacion\\mal.png")
+        self.fin = tk.PhotoImage(file="imagenes\\animacion\\fin.png")
+        self.malo = tk.PhotoImage(file="imagenes\\animacion\\mal.png")
 
-        self.btnPlay = tk.PhotoImage(file="C:\\Users\\user\\Desktop\\proyectoCopiladores\\img\\play.png")
+        self.btnPlay = tk.PhotoImage(file="imagenes\\play.png")
         self.btn = self.canvas1.create_image(200, 600, image=self.btnPlay, anchor="nw", tag="btn")
 
-        self.rei = tk.PhotoImage(file="animacion\\reiniciar.png")
+        self.rei = tk.PhotoImage(file="imagenes\\animacion\\reiniciar.png")
 
         #eventos
         self.canvas1.tag_bind("btn", "<ButtonPress-1>", self.btnpresionado)

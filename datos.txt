@@ -1,8 +1,0 @@
-Inicio:
-Tanque = Lleno 
-Velocidad = Normal 
-Derecha 
-Si Trafico
-Rebasar
-Izquierda
-Fin:
